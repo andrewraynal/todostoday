@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>Todos Today</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    
+    <link rel="shortcut icon" href="/todos.jpg">
+    <link rel="stylesheet" href="styles/main.css"> 
+        <!-- endbuild -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>YOUR TO DO LIST</h1>
+        </header>
+        <form class="finalTodo hide" id="finalTodo">
+      
+        </form> 
+<!-- clean form/home page -->
+        <form class="homeAddTodo">
+            <ul id="newactivitylist" class="newactivitylist">
+                <li>
+                    <label for="newactivitylabel">ENTER TO DO</label>
+                </li>
+                <li>
+                    <input type="text" id="actinput" tabindex="1">
+                </li>
+            </ul>
+            <ul id="newtimelist" class="newtimelist">
+                <li>
+                    <label for="newtimelabel">TIME</label>
+                </li>
+                <li>
+                    <input type="text" id="timeinput" tabindex="2">
+                </li>
+            </ul>
+            <ul id="newnoteslist" class="newnoteslist">
+                <li>
+                    <label for="newnoteslabel">NOTES</label>
+                </li>
+                <li>
+                    <input type="text" id="notesinput" tabindex="3">
+                </li>
+            </ul> 
+            <ul id="newtodobuttons">
+                <li>
+                    <input type="button" data="date" class="addTodobtn" tabindex="4" value="ADD TO DO" >
+                </li>
+                <li>
+                    <input type="button" class="seeTodoListbtn" tabindex="5" value="SEE MY LIST" >
+                </li>
+            </ul>
+        </form>
+
+<!-- begin edit form -->
+        <form class="editTodoForm hide">
+   
+        </form>
+   
+    </div>
+    <div class="footer">
+        <p><span class="footerbaby"></span></p>
+    </div>
+
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/underscore/underscore.js"></script>
+<script src="scripts/templates.js"></script>
+<script src="scripts/main.js"></script>
+        
+        <!-- endbuild -->
+</body>
+</html>
